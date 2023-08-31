@@ -29,6 +29,14 @@ const Navbar = () => {
         Resume
       </Link>
     </li>
+    <li className="nav-item">
+      <Link
+      to="/portfolio"
+      className={currentPage == "/portfolio" ? "nav-link active" : "nav-link"}
+      >
+        Portfolio
+      </Link>
+    </li>
    </ul>
   )
 }
