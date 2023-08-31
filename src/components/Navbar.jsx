@@ -1,19 +1,27 @@
-
-import About from "./About"
+import { Link, useLocation } from "react-router-dom"
 
 const Navbar = () => {
-  return (
-    <div>
-      <nav>
-      <a href={()=>About}>About Me</a>
-      {/* <a href={contact}>Contact Me</a>
-      <a href={portfolio}>My Portfolio</a>
-      <a href={resume}>My Resume</a> */}
-      </nav>
-      
-        
+  const currentPage = useLocation().pathname;
   
-    </div>
+  return (
+   <ul className="nav nav-tabs">
+    <li className="nav-item">
+      <Link
+      to="/"
+      className={currentPage == '/' ? 'nav-link active' : 'nav-link'}
+      >
+        About Me
+      </Link>
+    </li>
+    <li className="nav-item">
+      <Link
+      to="/contact"
+      className={currentPage == "/contact" ? 'nav-link active' : 'nav-link'}
+      >
+        Contact
+      </Link>
+    </li>
+   </ul>
   )
 }
 

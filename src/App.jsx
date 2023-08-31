@@ -1,13 +1,15 @@
+import { Outlet } from "react-router-dom"
 import Navbar from "./components/Navbar"
-import Content from "./components/Content"
 
 function App() {
 
   return (
-    <div>
+    <>
     <Navbar/>
-    <Content/>
-    </div>
+    <main className="mx-3">
+      <Outlet/>
+    </main>
+    </>
   )
 }
 
