@@ -1,4 +1,3 @@
-import {useState, useEffect} from "react"
 import Form from "../components/Form"
 
 const Contact = () => {
