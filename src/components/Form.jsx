@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { validateEmail } from "../utils/helpers"
 
-
-const Form = () => {
+const ContactForm = () => {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -72,13 +71,13 @@ const Form = () => {
           placeholder="Please Enter Your Email"
         /> 
         
-        <input
+        <input 
           value={message}
           name="message"
           onChange={handleInputChange}
           type="message"
           placeholder="Send Me a Message"
-          onBlur={() => setErrorMessage(message.length > 0 ? false : true)}
+          onBlur={() => setMessageError(message.length > 0 ? false : true)}
         /> 
           {messageError && (
           <span>You have to say something</span> 
@@ -95,4 +94,4 @@ const Form = () => {
   );
 }
 
-export default Form
+export default ContactForm
