@@ -5,8 +5,8 @@ const Navbar = () => {
   
   return (
     <>
-   <ul className="nav nav-tabs" roles="tablist">
-    <span className="nav-brand navbar-text fs-1">Jay's Portfolio!</span>
+    <ul className="nav nav-tabs justify-content-end" roles="tablist">
+    <span className="fs-1">Jay's Portfolio!</span>
     <li className="nav-item" role="presentation">
       <Link
       to="/"

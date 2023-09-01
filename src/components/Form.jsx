@@ -61,7 +61,7 @@ const ContactForm = () => {
           onBlur={() => setNameError(name.length > 0 ? false : true)}
         />
           {nameError && (
-          <span>A man needs a name...</span> 
+          <span>You Must Enter a Name</span> 
           )}
         
         <input
@@ -83,7 +83,7 @@ const ContactForm = () => {
           onBlur={() => setMessageError(message.length > 0 ? false : true)}
         /> 
           {messageError && (
-          <span>You have to say something</span> 
+          <span>Message Field can't be Blank</span> 
           )}
 
         <button type="submit">Submit</button>
