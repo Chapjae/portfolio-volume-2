@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { validateEmail } from "../utils/helpers"
 
+
 const Form = () => {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [nameError, setNameError] = useState(false);
+  const [messageError, setMessageError] = useState(false);
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -55,21 +58,32 @@ const Form = () => {
           onChange={handleInputChange}
           type="name"
           placeholder="Please Enter Your Name"
+          onBlur={() => setNameError(name.length > 0 ? false : true)}
         />
+          {nameError && (
+          <span>A man needs a name...</span> 
+          )}
+        
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
           type="email"
           placeholder="Please Enter Your Email"
-        />
+        /> 
+        
         <input
           value={message}
           name="message"
           onChange={handleInputChange}
           type="message"
           placeholder="Send Me a Message"
-        />
+          onBlur={() => setErrorMessage(message.length > 0 ? false : true)}
+        /> 
+          {messageError && (
+          <span>You have to say something</span> 
+          )}
+
         <button type="submit">Submit</button>
       </form>
       {errorMessage && (
