@@ -4,8 +4,10 @@ const Navbar = () => {
   const currentPage = useLocation().pathname;
   
   return (
-   <ul className="nav nav-tabs">
-    <li className="nav-item">
+    <>
+   <ul className="nav nav-tabs" roles="tablist">
+    <span className="nav-brand navbar-text fs-1">Jay's Portfolio!</span>
+    <li className="nav-item" role="presentation">
       <Link
       to="/"
       className={currentPage == '/' ? 'nav-link active' : 'nav-link'}
@@ -37,7 +39,8 @@ const Navbar = () => {
         Portfolio
       </Link>
     </li>
-   </ul>
+   </ul> 
+  </>
   )
 }
 

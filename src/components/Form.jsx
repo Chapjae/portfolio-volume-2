@@ -52,6 +52,7 @@ const ContactForm = () => {
       <h1>Contact Form!</h1>
       <form className="form" onSubmit={handleFormSubmit}>
         <input
+          className="form-control"
           value={name}
           name="name"
           onChange={handleInputChange}
@@ -64,6 +65,7 @@ const ContactForm = () => {
           )}
         
         <input
+          className="form-control"
           value={email}
           name="email"
           onChange={handleInputChange}
@@ -72,6 +74,7 @@ const ContactForm = () => {
         /> 
         
         <input 
+          className="form-control row-4"
           value={message}
           name="message"
           onChange={handleInputChange}

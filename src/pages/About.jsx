@@ -1,10 +1,8 @@
-import * as React from "react"
-
 const About = () => {
   return(
-    <div>
-    <h1>About Me</h1>
-    <p>
+    <div classname="container text-center by-primary-subtle">
+    <h1 className="bg-primary-subtle text-center">About Me</h1>
+    <p className="by-primary-subtle text-center">
     I'm still a simple man, but this time I'm a reactive simple man!
     </p>
     </div>
