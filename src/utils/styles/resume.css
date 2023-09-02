@@ -1,0 +1,16 @@
+ ul {
+   background-color: #345995;
+  }
+  
+  h3 {
+    text-align: center;
+    color: tomato;
+}
+
+li {
+  color : #03cea4;
+  background-color: #345995;
+  text-align: center;
+  list-style: none;
+ }
+

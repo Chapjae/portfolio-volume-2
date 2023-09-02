@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { validateEmail } from "../utils/helpers"
+import "../utils/styles/form.css"
 
 const ContactForm = () => {
 
@@ -49,7 +50,7 @@ const ContactForm = () => {
 
   return(
     <div className="container text-center">
-      <h1>Contact Form!</h1>
+      <h3>Contact Form!</h3>
       <form className="form" onSubmit={handleFormSubmit}>
         <input
           className="form-control"
@@ -74,7 +75,8 @@ const ContactForm = () => {
         /> 
         
         <input 
-          className="form-control row-4"
+          className="form-control"
+          style={{height:200}}
           value={message}
           name="message"
           onChange={handleInputChange}
@@ -86,7 +88,7 @@ const ContactForm = () => {
           <span>Message Field can't be Blank</span> 
           )}
 
-        <button type="submit">Submit</button>
+        <button style={{background: "#eac435", color: "#e40066"}} type="submit">Submit</button>
       </form>
       {errorMessage && (
         <div>
