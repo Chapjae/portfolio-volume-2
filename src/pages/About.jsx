@@ -1,7 +1,7 @@
 const About = () => {
   return(
-    <div classname="container text-center by-primary-subtle">
-    <h1 className="bg-primary-subtle text-center">About Me</h1>
+    <div classname="container text-center">
+    <h2 className="bg-primary-subtle text-center">About Me</h2>
     <p className="by-primary-subtle text-center">
     I'm still a simple man, but this time I'm a reactive simple man!
     </p>

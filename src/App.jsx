@@ -6,10 +6,12 @@ function App() {
 
   return (
     <>
-    <Navbar/>
+    <Navbar />
+    <div className="container"></div>
     <main className="mx-3">
       <Outlet/>
     </main>
+    <div className="container"></div>
     <Footer/>
     </>
   )
