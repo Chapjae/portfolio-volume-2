@@ -74,7 +74,7 @@ export const projects = [
     id: 1,
     title: 'Kickback Hydration Product Page',
     des: 'Product page for lemonade flavor hydration packet using Three.js.',
-    img: '/p1.svg',
+    img: '/kickback.svg',
     iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg'],
     link: 'https://github.com/APHydration/kickback',
   },
@@ -82,15 +82,15 @@ export const projects = [
     id: 2,
     title: 'Bluefin Music Ear Training App',
     des: 'Full stack muscial note matching game.',
-    img: '/p2.svg',
-    iconLists: ['/next.svg', '/tail.svg', '/ts.svg', '/three.svg', '/c.svg'],
+    img: '/bluefin.svg',
+    iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg'],
     link: 'https://murmuring-thicket-14542-74d2838aa204.herokuapp.com/',
   },
   {
     id: 3,
     title: 'Puffer Isle Resort',
     des: 'Website for Puffer Isle Resort located in Dingalan Philippines.',
-    img: '/p3.svg',
+    img: '/pufferbeach.svg',
     iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/gatsby.svg'],
     link: 'https://pufferisleresort.netlify.app/',
   },
@@ -203,12 +203,12 @@ export const workExperience = [
 
 export const socialMedia = [
   {
-    id: 1,
+    id: '1',
     img: '/git.svg',
     url: 'https://github.com/chapjae',
   },
   {
-    id: 2,
+    id: '2',
     img: '/link.svg',
     url: 'https://www.linkedin.com/in/jay-liu-3208a3bb/',
   },
